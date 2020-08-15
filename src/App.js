@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { Provider } from './context';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navbar from './components/layouts/Navbar';
 import Contacts from './components/contact/Contacts';
