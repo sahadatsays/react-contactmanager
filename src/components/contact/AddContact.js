@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Consumer } from "../../context";
-import { v4 as uuidv4 } from 'uuid';
 import InputGroup from '../layouts/InputGroup';
 import axios from 'axios';
 

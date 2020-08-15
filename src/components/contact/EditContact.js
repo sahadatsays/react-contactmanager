@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Consumer } from "../../context";
-import { v4 as uuidv4 } from 'uuid';
 import InputGroup from '../layouts/InputGroup';
 import axios from 'axios';
 
@@ -59,8 +58,8 @@ class EditContact extends Component {
           const { id } = this.props.match.params;
 
           const res = await axios.put(`https://jsonplaceholder.typicode.com/users/${id}`, upData);
-          
-          dispatch({type: 'UPDATE_CONTACT', payload: res.data});
+
+          dispatch({ type: 'UPDATE_CONTACT', payload: res.data });
 
           // Clear Input Field
           this.setState({
